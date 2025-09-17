@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.game-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 180px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#guessList {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+}
+
+#guessList h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+#guessList ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#guessList li {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#guessList li:hover {
+    background-color: #f1f1f1;
+}
+
+#guessList li.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+#guessList li.too-low {
+    background-color: #ffc107;
+    color: #333;
+}
+
+#guessList li.too-high {
+    background-color: #dc3545;
+    color: white;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#message.right {
+    color: #008000;
+}
+
+#message.wrong {
+    color: #ffa500;
+}
